@@ -4,16 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="/src/style.css" rel="stylesheet" />
-		<script src="/src/darkmode.js" type="module" defer></script>
+		<script src="/src/main.js" type="module"></script>
 	</head>
 
 	<body
 		class="flex size-10 min-h-screen w-screen bg-[url(/src/img/background.webp)] bg-cover dark:bg-[url(/src/img/darkbackground.webp)]">
 		<div
-			class="m-auto flex h-8/12 w-8/12 flex-col rounded-4xl border-2 border-amber-50/20 bg-amber-50/60 bg-amber-950/10 py-15 text-center dark:bg-amber-950/60">
+			class="m-auto flex h-8/12 w-8/12 flex-col rounded-4xl border-2 border-amber-50/20 bg-amber-50/60 py-15 text-center dark:border-amber-900/20 dark:bg-amber-950/60">
 			<h1 class="grow text-black dark:text-white">Sito in costruzione</h1>
-			<div>
-				<button id="SystemSwitch" class="border-amber-50">
+			<div class="mx-auto flex">
+				<div id="SystemSwitch" class="border-amber-900 dark:border-amber-50">
 					<span
 						class="rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent"
 						aria-label="System theme"
@@ -35,8 +35,8 @@
 								stroke-linecap="round"></path>
 						</svg>
 					</span>
-				</button>
-				<button id="LightSwitch" class="border-amber-50">
+				</div>
+				<div id="LightSwitch" class="border-amber-900 dark:border-amber-50">
 					<span
 						class="rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent"
 						aria-label="Light theme"
@@ -81,16 +81,14 @@
 								stroke-linecap="round"></path>
 						</svg>
 					</span>
-				</button>
-				<button id="DarkSwitch" class="border-amber-50">
+				</div>
+				<div id="DarkSwitch" class="border-amber-900 dark:border-amber-50">
 					<span
-						class="rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent"
+						class="p-1.5 *:size-7 sm:p-0"
 						aria-label="Dark theme"
 						id="headlessui-radio-«Rem5elb»"
 						role="radio"
-						aria-checked="true"
 						tabindex="0"
-						data-headlessui-state="checked"
 						data-checked="">
 						<svg viewBox="0 0 28 28" fill="none">
 							<path
@@ -111,7 +109,7 @@
 								stroke-linejoin="round"></path>
 						</svg>
 					</span>
-				</button>
+				</div>
 			</div>
 		</div>
 	</body>
