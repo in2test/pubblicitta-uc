@@ -8,12 +8,21 @@
 	</head>
 
 	<body
-		class="flex size-10 min-h-screen min-w-screen flex-col bg-[url(/src/img/background.webp)] bg-cover bg-fixed dark:bg-[url(/src/img/darkbackground.webp)]">
-		<nav></nav>
-		<hero class="bg-amber-50 w-fit">Sito in Costruzione</hero>
-		<main class="grow w-80 mx-auto">Dettagli</main>
-		<footer class="p-10 border-t border-t-amber-700 bg-amber-800/30">
-			<div class="mx-auto flex w-fit">
+		class="flex min-h-screen flex-col bg-[url(/src/img/background.webp)] bg-cover bg-fixed dark:bg-[url(/src/img/darkbackground.webp)]">
+		<header
+			class="sticky top-10 z-10 flex items-center bg-amber-50/20 px-10 py-10">
+			<img src="https://picsum.photos/300/80" alt="" class="logo" />
+			<nav class="grow text-center">
+				<ul class="m-auto flex w-fit gap-x-10">
+					<li>E-commerce</li>
+					<li>Portfolio</li>
+					<li>Chi Siamo</li>
+					<li>Chi Siamo</li>
+					<li>Chi Siamo</li>
+					<li>Chi Siamo</li>
+				</ul>
+			</nav>
+			<div class="utilities mx-auto flex w-fit">
 				<div id="SystemSwitch" class="border-amber-900 dark:border-amber-50">
 					<span
 						class="p-1.5 *:size-7 sm:p-0"
@@ -22,7 +31,7 @@
 						role="radio"
 						aria-checked="false"
 						tabindex="-1"
-						data-headlessui-state=""> 
+						data-headlessui-state="">
 						<svg
 							viewBox="0 0 28 28"
 							fill="none"
@@ -99,11 +108,16 @@
 					</span>
 				</div>
 			</div>
-		</footer>
+		</header>
+		<hero class="m-0 bg-amber-50">
+			<img src="https://picsum.photos/4000/4000" alt="" class="w-full" />
+		</hero>
+		<main class="mx-auto w-80 grow">Dettagli</main>
+		<footer class="border-t border-t-amber-700 bg-amber-800/30 p-10"></footer>
 
 		<!--div
 			class="m-auto flex h-8/12 w-8/12 flex-col rounded-4xl border-2 border-amber-50/20 bg-amber-50/60 py-15 text-center dark:border-amber-900/20 dark:bg-amber-950/60">
 			<h1 class="grow text-black dark:text-white">Sito in costruzione</h1>
-		</div--> 
+		</div-->
 	</body>
 </html>
