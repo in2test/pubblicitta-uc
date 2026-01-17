@@ -5,6 +5,8 @@
   --font-sans: "Manrope", sans-serif;
   --font-super: "Fjalla One", sans-serif;
 	--color-*:initial;
+  --color-black:oklch(0 0 0);
+  --color-white:oklch(1 0 0);
   --color-mahogany-50: oklch(0.95 0.03 40);
   --color-mahogany-100: oklch(0.93 0.04 40);
   --color-mahogany-200: oklch(0.88 0.07 40);
@@ -51,4 +53,14 @@
   --color-blue-950: oklch(0.26 0.09 256);
   --color-light: oklch(0.9629 0.0025 228.78);
   --color-dark: oklch(0.194 0.0393 255.59)
+}
+
+h1, h2{
+  @apply font-super uppercase;
+}
+h3 {
+  @apply uppercase text-2xl font-bold;
+}
+h3 span {
+  @apply uppercase
 }
